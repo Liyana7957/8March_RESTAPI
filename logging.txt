@@ -1,0 +1,85 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -33.3333,
+        "lng": -22.3333
+    },
+    "accuracy": 30,
+    "name": "amit1",
+    "phone_number": "123321456",
+    "address": "add1",
+    "types": [
+        "asdf",
+        "lll"
+    ],
+    "website": "www.yahoo.com",
+    "language": "lang1"
+}
+HTTP/1.1 200 OK
+Date: Mon, 07 Mar 2022 09:56:12 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "26151cd1d52727d3599bce8b847ae8d6",
+    "scope": "APP",
+    "reference": "3f97b3ccae94da7a26d212579fcdacab3f97b3ccae94da7a26d212579fcdacab",
+    "id": "3f97b3ccae94da7a26d212579fcdacab"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=26151cd1d52727d3599bce8b847ae8d6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=26151cd1d52727d3599bce8b847ae8d6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 07 Mar 2022 09:56:13 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 198
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-33.3333",
+        "longitude": "-22.3333"
+    },
+    "accuracy": "30",
+    "name": "amit1",
+    "phone_number": "123321456",
+    "address": "add1",
+    "types": "asdf,lll",
+    "website": "www.yahoo.com",
+    "language": "lang1"
+}
