@@ -75,14 +75,12 @@
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
     <version>4.8.0</version>
-    <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
-     <version>3.0.3</version>
-    <scope>test</scope>
+    <version>4.5.1</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
