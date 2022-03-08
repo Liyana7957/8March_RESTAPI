@@ -41,7 +41,7 @@ public class Utils {
 	
 	public static String getGlobalProperties(String key) throws IOException{
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("E:\\Practises\\2. RestAssuredAPI\\src\\test\\java\\Resources\\global.properties");
+		FileInputStream fis = new FileInputStream(new File(System.getProperty("user.dir")+ "\\src\\test\\java\\Resources\\global.properties"));
 		prop.load(fis);
 		System.out.println(prop.getProperty(key));
 		return prop.getProperty(key);
