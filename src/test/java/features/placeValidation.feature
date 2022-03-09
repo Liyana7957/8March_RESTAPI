@@ -1,6 +1,6 @@
 Feature: Validating place api
 
-@AddPlace
+@AddPlace @Regression
 Scenario Outline: Verify if place is being sucessfully added using addPlaceAPI
 Given Add Place Payload with "<name>" "<language>" "<address>"
 When users call "AddPlaceAPI" with "Post" http request
@@ -17,7 +17,7 @@ Examples:
 	#	|amit2  |lang2     |add2    |
 
 	
-	@DeletePlace
+	@DeletePlace @Regression
 	Scenario: Verify if delete place functionality is working
 	Given Delete PayLoad
 	When users call "deletePlaceAPI" with "Post" http request
