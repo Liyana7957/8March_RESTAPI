@@ -30,7 +30,7 @@ public class Utils {
 		PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
 		//RestAssured.baseURI = "https://rahulshettyacademy.com";
 		//RestAssured.baseURI = "https://rahulshettyacademy.com";
-		inputRequest = new RequestSpecBuilder().setBaseUri(getGlobalProperties("baseUrl"))
+		inputRequest = new RequestSpecBuilder().setRelaxedHTTPSValidation().s.setRelaxedHTTPSValidation()etBaseUri(getGlobalProperties("baseUrl"))
 				.addQueryParam("key", "qaclick123")
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
 				.addFilter(ResponseLoggingFilter.logResponseTo(log))
